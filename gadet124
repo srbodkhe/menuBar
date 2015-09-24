@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Preferences for __UP_myname__" height="400"/>
+ 
+  <UserPref name="myphoto" display_name="Photo" default_value="http://doc.examples.googlepages.com/rowan-headshot.jpg"/>
+  <UserPref name="mychoice" display_name="Show Photo?" datatype="bool" default_value="true"/>
+  
+    
+   </UserPref>
+   <Content type="html"><![CDATA[
+   <div id="content_div"></div>
+   <script type="text/javascript">
+   // Get userprefs
+   var prefs = new gadgets.Prefs();
+
+   function displayGreeting () {
+     // If the "Show Photo?" checkbox is checked, display photo.
+     if (prefs.getBool("mychoice") == true) {
+       html += '<img src="' + prefs.getString("myphoto") + '">';
+     }
+     element.innerHTML = html;
+   }
+   // Pass the userprefs for this module instance to the function
+   // (allows users to include multiple module instances on their page)
+   gadgets.util.registerOnLoadHandler(displayGreeting);
+
+   </script>
+   ]]>
+  </Content>
+</Module>
