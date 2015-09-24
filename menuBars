@@ -1,12 +1,13 @@
 	<?xml version="1.0" encoding="UTF-8" ?>
 	<Module>
-	<ModulePrefs title="Trevor Does Tricks" height="300">
+	<ModulePrefs title="Menu Bar" height="100">
 	  <Require feature="flash" />
 	</ModulePrefs>
 	<Content type="html">
 	<![CDATA[
 	<style>
-	body {
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+   	body {
 	  background-color: #EBE8E4;
 	  color: #222;
 	  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
