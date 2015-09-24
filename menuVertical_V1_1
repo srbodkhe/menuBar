@@ -3,7 +3,7 @@
   <ModulePrefs title="Hello World!">
     <Require feature="opensocial-0.8" />
   </ModulePrefs>
-  <Content type="html" view="home">
+  <Content type="html" view="canvas">
     <![CDATA[
     <html>
     <head>
