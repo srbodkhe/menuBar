@@ -3,7 +3,7 @@
   <ModulePrefs title="Hello World!">
     <Require feature="opensocial-0.8" />
   </ModulePrefs>
-  <Content type="html" view="canvas">
+  <Content type="html">
     <![CDATA[
     <html>
     <head>
@@ -139,9 +139,4 @@ nav.vertical {
      </html>
     ]]>
   </Content>
-  <Content type="html" view="canvas">
-    <![CDATA[
-      Hello, big world!
-    ]]>
-  </Content>
-</Module>
+  </Module>
